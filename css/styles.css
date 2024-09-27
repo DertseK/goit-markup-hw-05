@@ -703,8 +703,15 @@ ul {
   border: none;
   fill: #ffffff;
 }
-.user-checkbox:focus + .user-form-label .review-form-own-checkbox {
+.cboc:focus + .formlabel .ffspan {
   outline: 1px solid #4d5ae5;
+}
+.inputi:focus {
+  border-color: #4d5ae5;
+}
+
+.inputi:focus + .formicon {
+  fill: #4d5ae5;
 }
 .formlabel {
   color: #8e8f99;
