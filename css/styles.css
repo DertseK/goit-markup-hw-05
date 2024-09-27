@@ -692,6 +692,15 @@ ul {
 .cboxdiv {
   margin-bottom: 24px;
 }
+.cbox:checked + .formlabel .ffspan {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+.user-checkbox:focus + .user-form-label .review-form-own-checkbox {
+  outline: 1px solid #4d5ae5;
+}
 .formlabel {
   color: #8e8f99;
   display: block;
