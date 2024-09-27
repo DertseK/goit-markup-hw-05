@@ -719,3 +719,23 @@ ul {
   text-decoration: underline;
   color: #4d5ae5;
 }
+.contsubmit {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  min-width: 169px;
+  padding: 16px 32px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
