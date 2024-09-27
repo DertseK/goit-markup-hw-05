@@ -429,9 +429,6 @@ ul {
 .otmslicov:hover .otmslicov2 {
   transform: translateY(0%);
 }
-
-.otmslicov2 {
-}
 .otmslicovp {
   background-color: #4d5ae5;
   overflow: auto;
@@ -509,8 +506,6 @@ ul {
 .footcontainer {
   margin-right: 120px;
 }
-.footermail {
-}
 .footermailp {
   color: #ffffff;
   font-weight: 500;
@@ -522,8 +517,6 @@ ul {
 .footerform {
   display: flex;
   gap: 24px;
-}
-.footerlabel {
 }
 .footerinput {
   border: 1px solid #ffffff;
@@ -545,21 +538,21 @@ ul {
   letter-spacing: 0.04em;
 }
 .footerbutton {
+  color: #ffffff;
+  background-color: #4d5ae5;
   font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
-  background-color: #4d5ae5;
-  cursor: pointer;
-  border: none;
   border-radius: 4px;
   min-width: 165px;
   height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -573,14 +566,14 @@ ul {
 }
 .footer-btn-icon {
   fill: #ffffff;
-  margin-left: 16px;
-
   transition-property: fill;
+  margin-left: 16px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop {
   position: fixed;
+  visibility: hidden;
   left: 0;
   top: 0;
   width: 100%;
@@ -588,18 +581,17 @@ ul {
   background-color: rgba(46, 47, 66, 0.4);
   z-index: 999;
   opacity: 0;
-  visibility: hidden;
-
   transition-property: opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-open {
-  opacity: 1;
   visibility: visible;
+  opacity: 1;
 }
 .mod {
   position: absolute;
+  background-color: #fcfcfc;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -607,65 +599,62 @@ ul {
   min-height: 584px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #fcfcfc;
   border-radius: 4px;
   padding: 72px 24px 24px 24px;
-
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modbutton {
+  background-color: #e7e9fc;
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   top: 24px;
   right: 24px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+
   padding: 0;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modbuttonicon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modp {
-  font-weight: 500;
-  font-size: 16px;
-
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
 .formdiv {
   margin-bottom: 8px;
 }
 .formlabel {
+  color: #8e8f99;
   font-size: 12px;
-
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8e8f99;
 }
 .inputdiv {
   position: relative;
 }
 .inputi {
+  outline: transparent;
+  background-color: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   width: 100%;
   height: 40px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  background-color: transparent;
   padding-left: 38px;
-  outline: transparent;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -673,11 +662,10 @@ ul {
 .formicon {
   fill: #2e2f42;
   position: absolute;
+  transition-property: fill;
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-
-  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -685,6 +673,9 @@ ul {
   margin-bottom: 16px;
 }
 .comtxt {
+  outline: transparent;
+  resize: none;
+  background-color: transparent;
   width: 100%;
   height: 120px;
   font-size: 12px;
@@ -693,14 +684,38 @@ ul {
   color: rgba(46, 47, 66, 0.4);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  background-color: transparent;
   padding: 8px 16px;
-  outline: transparent;
-  resize: none;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cboxdiv {
   margin-bottom: 24px;
+}
+.formlabel {
+  color: #8e8f99;
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+.ffspan {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.pollink {
+  text-decoration: underline;
+  color: #4d5ae5;
 }
