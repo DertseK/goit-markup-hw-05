@@ -676,6 +676,7 @@ ul {
   outline: transparent;
   resize: none;
   background-color: transparent;
+  resize: none;
   width: 100%;
   height: 120px;
   font-size: 12px;
