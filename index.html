@@ -44,7 +44,7 @@
     <section class="esfyb">
       <div class="container">
         <h1 class="esfybtxt">Effective Solutions for Your Business</h1>
-        <button type="button" class="esfybbutton">Order Service</button>
+        <button type="button" class="esfybbutton" id="orderServiceBtn">Order Service</button>
       </div>
     </section>
     <!-- Section Two-->
@@ -423,9 +423,9 @@
     </div>
   </footer>
   <!--Qra-->
-  <div class="backdrop">
+  <div class="backdrop" id="backdrop">
     <div class="mod">
-      <button class="modbutton" type="button">
+      <button class="modbutton" type="button" id="closeModalBtn">
         <svg class="modbuttonicon" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
@@ -468,10 +468,9 @@
           <textarea class="comtxt" id="user-comment" name="user-comment" required placeholder="Text input"></textarea>
         </div>
         <div class="cboxdiv">
-          <input class="cbox visually-hidden" id="user-privacy" type="checkbox" name="user-privacy" value="true"
-            required />
+          <input class="cbox sectwohid" id="user-privacy" type="checkbox" name="user-privacy" value="true" required />
           <label class="formlabel" for="user-privacy"><span class="ffspan">
-              <svg class="review-form-own-checkbox-icon" width="10" height="8">
+              <svg class="review-form-own-checkbox-icon" width="10" height="8" hidden>
                 <use href="./images/icons.svg#icon-checkmark"></use>
               </svg> </span>I accept the terms and conditions of the
             <a class="pollink" href="">Privacy Policy</a></label>
@@ -480,6 +479,7 @@
       </form>
     </div>
   </div>
+  <!--<script src="modal.js"></script> Scripts for part next-->
 </body>
 
 </html>
